@@ -1,0 +1,65 @@
+body {
+    background-color: #d8ecf3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;}
+.buttons {
+    margin: 10px 0 0 10px;
+}
+#btn {
+    font-size: 20px;
+    border-radius: 12px;
+    border: 2px solid #add8e6;
+    margin-bottom: 5px;
+}
+#btn:hover {
+    background-color:  #3ca1c3;
+}
+#add-input {
+    border: 1px solid #add8e6;
+    border-radius: 10px;
+}
+form {
+    margin: 10px 0 10px 10px;
+}
+#gif-section {
+    padding-left: 7%;
+}
+#img-div {
+    float: left;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.gif {
+    margin-right: 10px;
+    border: 3px ridge #30819c;
+}
+@media screen and (min-width: 640px){
+    #btn {
+        font-size: 16px;
+    }
+    #gif-section {
+        padding-left: 25%;
+    }
+}
+@media screen and (min-width: 768px){
+    #btn {
+        font-size: 18px;
+    }
+    #gif-section {
+        padding-left: 15%;
+    }
+}
+@media screen and (min-width: 992px){
+    #btn {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 1200px){
+    #gif-section {
+        padding-left: 10%;
+    } 
+}

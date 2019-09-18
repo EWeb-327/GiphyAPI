@@ -3,7 +3,7 @@ $(".buttons").on("click", "#btn", function(){
 
     var show = $(this).attr("data-term");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-    show + "&api_key=UCDTIc1rkP4wprGEHUtsNYEe3uQHHPNB&limit=10";
+    show + "&api_key=UCDTIc1rkP4wprGEHUtsNYEe3uQHHPNB&limit=20";
 
     $.ajax({
         url: queryURL,
@@ -12,7 +12,7 @@ $(".buttons").on("click", "#btn", function(){
         var results = response.data;
         console.log(results)
         for (var i =0; i<results.length; i++){
-            var gifDiv = $("<div>");
+            var gifDiv = $("<div>").attr("id", "img-div");
             var rating = results[i].rating;
             var p = $("<p>").text("Rating: " + rating);
             var showGif = $("<img>").addClass("gif");
@@ -21,9 +21,9 @@ $(".buttons").on("click", "#btn", function(){
             showGif.attr("data-animate", results[i].images.fixed_height.url);
             showGif.attr("data-state", "still")
 
-            gifDiv.prepend(p, showGif);
+            gifDiv.prepend(showGif, p);
 
-            $("#gif-section").prepend(gifDiv)
+            $("#gif-section").append(gifDiv)
         }
     })
 
