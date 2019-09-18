@@ -1,9 +1,9 @@
-$("button").on("click", function(){
+$(".buttons").on("click", "#btn", function(){
     $("#gif-section").empty();
 
     var show = $(this).attr("data-term");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-    show + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=10";
+    show + "&api_key=UCDTIc1rkP4wprGEHUtsNYEe3uQHHPNB&limit=10";
 
     $.ajax({
         url: queryURL,
@@ -43,7 +43,8 @@ var showsAdded= []
 function renderButtons() {
     $("#new-buttons").empty()
     for (var i = 0; i < showsAdded.length; i++){
-      var newButton = $("<button>").text(showsAdded[i])
+      var newButton = $("<button>").text(showsAdded[i]).attr("id", "btn")
+      $(newButton).attr("data-term", showsAdded[i])
       $("#new-buttons").append(newButton)
     }
   }
@@ -52,6 +53,7 @@ $("#add-input").on("click", function(event) {
 
     var newShow = $("#search-input").val().trim()
     showsAdded.push(newShow)
+    console.log(showsAdded)
     renderButtons()
     $("#search-input").val("")
   })
