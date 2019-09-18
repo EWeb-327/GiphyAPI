@@ -2,8 +2,9 @@ $(".buttons").on("click", "#btn", function(){
     $("#gif-section").empty();
 
     var show = $(this).attr("data-term");
+    var number = $("#FormInput2").val();
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-    show + "&api_key=UCDTIc1rkP4wprGEHUtsNYEe3uQHHPNB&limit=20";
+    show + "&api_key=UCDTIc1rkP4wprGEHUtsNYEe3uQHHPNB&limit=" + number;
 
     $.ajax({
         url: queryURL,

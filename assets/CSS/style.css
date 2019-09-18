@@ -22,8 +22,26 @@ body {
     border: 1px solid #add8e6;
     border-radius: 10px;
 }
+.bar {
+    background-color: #30819c;
+    border: 2px solid  #add8e6;
+    height: 30px;
+    padding: 0 10px 7px 0;
+    margin: 0 10px 7px 0;
+}
 form {
     margin: 10px 0 10px 10px;
+    
+}
+#search {
+    float: left;
+}
+#number {
+    float: right;
+}
+#FormInput2 {
+    border: 1px solid #add8e6;
+    border-radius: 10px;
 }
 #gif-section {
     padding-left: 7%;

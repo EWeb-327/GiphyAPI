@@ -1,66 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/CSS/reset.css">
-    <link rel="stylesheet" href="assets/CSS/style.css">
-    <title>Giphy API</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="assets/CSS/reset.css">
+        <link rel="stylesheet" href="assets/CSS/style.css">
+        <title>Giphy API</title>
 </head>
+
 <body>
-    <section class="buttons">
-        <button id="btn" data-term="Schitt's Creek">
-            Schitt's Creek
-        </button>
-        <button id="btn" data-term="Parks and Rec">
-                Parks and Rec
-        </button>
-        <button id="btn" data-term="The Office">
-                The Office
-        </button>
-        <button id="btn" data-term="Friends">
-                Friends
-        </button>
-        <button id="btn" data-term="How I Met Your Mother">
-                How I Met Your Mother
-        </button>
-        <button id="btn" data-term="30 Rock">
-                30 Rock
-        </button>
-        <button id="btn" data-term="Boy Meets World">
-                Boy Meets World
-        </button>
-        <button id="btn" data-term="Scrubs">
-                Scrubs
-        </button>
-        <button id="btn" data-term="Seinfeld">
-                Seinfeld
-        </button>
-        <button id="btn" data-term="Big Bang Theory">
-                Big Bang Theory
-        </button>
-        <button id="btn" data-term="Brooklyn Nine-Nine">
-                Brooklyn Nine-Nine
-        </button>
-        <button id="btn" data-term="SNL">
-                SNL
-        </button>
-        <button id="btn" data-term="Modern Family">
-                Modern Family
-        </button>
-        <div id="new-buttons"></div>
-    </section>
-    <form>
-    <span id="search">
-        Search:
-        <input id="search-input" type="text">
-        <input id="add-input" value="Add Button" type="submit">
-    </span>
-    </form>
-    <div id="gif-section">
-    </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="assets/javascript.js"></script>
+        <section class="buttons">
+                <button id="btn" data-term="Schitt's Creek">
+                        Schitt's Creek
+                </button>
+                <button id="btn" data-term="Parks and Rec">
+                        Parks and Rec
+                </button>
+                <button id="btn" data-term="The Office">
+                        The Office
+                </button>
+                <button id="btn" data-term="Friends">
+                        Friends
+                </button>
+                <button id="btn" data-term="How I Met Your Mother">
+                        How I Met Your Mother
+                </button>
+                <button id="btn" data-term="30 Rock">
+                        30 Rock
+                </button>
+                <button id="btn" data-term="Boy Meets World">
+                        Boy Meets World
+                </button>
+                <button id="btn" data-term="Scrubs">
+                        Scrubs
+                </button>
+                <button id="btn" data-term="Seinfeld">
+                        Seinfeld
+                </button>
+                <button id="btn" data-term="Big Bang Theory">
+                        Big Bang Theory
+                </button>
+                <button id="btn" data-term="Brooklyn Nine-Nine">
+                        Brooklyn Nine-Nine
+                </button>
+                <button id="btn" data-term="SNL">
+                        SNL
+                </button>
+                <button id="btn" data-term="Modern Family">
+                        Modern Family
+                </button>
+                <div id="new-buttons"></div>
+        </section>
+        <section class="bar">
+        <form>
+                <div class="form-group" id="search">
+                        <span id="search">
+                                Add Show:
+                                <input id="search-input" type="text">
+                                <input id="add-input" value="Add Button"
+                                        type="submit">
+                        </span>
+                </div>
+                <div class="form-group" id="number">
+                        <label for="FormInput2">Number of Gifs to Retrieve:</label>
+                        <select class="form-control" id="FormInput2">
+                                <option>5</option>
+                                <option>10</option>
+                                <option>15</option>
+                                <option>20</option>
+                                <option>25</option>
+                        </select>
+                </div>
+        </form>
+        </section>
+        <div id="gif-section">
+        </div>
+        <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/javascript.js"></script>
 </body>
+
 </html>
